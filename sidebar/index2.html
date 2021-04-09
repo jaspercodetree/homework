@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css" />
+    <!-- Scrollbar Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>
+            <img src="https://fakeimg.pl/32x32/" alt="companyLogo" />Synerter
+            ERP
+          </h3>
+        </div>
+
+        <ul class="list-unstyled components" id="accordion">
+          <p>ERP系統</p>
+
+          <li class="dropright">
+            <a
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseGla"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >會計總帳</a
+            >
+            <ul
+              id="collapseGla"
+              class="collapse list-unstyled"
+              data-parent="#accordion"
+            >
+              <li>
+                <div>會計憑證</div>
+                <a href="#">會計憑證列表</a>
+                <a href="#">日記帳</a>
+              </li>
+              <li>
+                <div>科目報表</div>
+                <a href="#">分類帳</a>
+                <a href="#">明細帳</a>
+                <a href="#">會計科目餘額</a>
+              </li>
+              <li>
+                <div>財務報表</div>
+                <a href="#">試算表</a>
+                <a href="#">損益表</a>
+                <a href="#">資產負債表</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropright">
+            <a
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapsePurchase"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >進貨管理</a
+            >
+            <ul
+              class="collapse list-unstyled"
+              id="collapsePurchase"
+              data-parent="#accordion"
+            >
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropright">
+            <a
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseSales"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >銷貨管理</a
+            >
+            <ul
+              class="collapse list-unstyled"
+              id="collapseSales"
+              data-parent="#accordion"
+            >
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropright">
+            <a
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseInventory"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >存貨管理</a
+            >
+            <ul
+              class="collapse list-unstyled"
+              id="collapseInventory"
+              data-parent="#accordion"
+            >
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropright">
+            <a
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseCompany"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >公司基本設定</a
+            >
+            <ul
+              class="collapse list-unstyled"
+              id="collapseCompany"
+              data-parent="#accordion"
+            >
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropright">
+            <a
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseEntEmployee"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >使用者管理</a
+            >
+            <ul
+              class="collapse list-unstyled"
+              id="collapseEntEmployee"
+              data-parent="#accordion"
+            >
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-light">
+              <i class="fas fa-bars"></i>
+            </button>
+            <span>XXXX股份有限公司</span>
+
+            <!-- navbar右側使用者登入按鈕區 -->
+            <!-- RWD 漢堡btn -->
+            <button
+              class="btn btn-info d-inline-block d-lg-none ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarRightArea"
+              aria-controls="navbarRightArea"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarRightArea">
+              <ul class="nav navbar-nav ml-auto">
+                <!-- 多國語言切換 -->
+                <li class="nav-item dropdown localization-dropdown">
+                  <a
+                    class="nav-link dropdown-toggle localization-Name"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >繁體</a
+                  >
+                  <div class="dropdown-menu localization-menu">
+                    <a class="dropdown-item localization-item" href="#">英文</a>
+                    <a class="dropdown-item localization-item" href="#">简体</a>
+                    <a class="dropdown-item localization-item" href="#">繁體</a>
+                  </div>
+                </li>
+
+                <!-- 使用者登入 -->
+                <li class="nav-item dropdown navbarUser-dropdown">
+                  <a
+                    class="nav-link navbarUser-Name"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Jasper</a
+                  >
+                  <div class="dropdown-menu navbarUser-menu">
+                    <a class="dropdown-item navbarUser-item" href="#"
+                      >使用者基本資料</a
+                    >
+                    <a class="dropdown-item navbarUser-item" href="#"
+                      >Another action</a
+                    >
+                    <a class="dropdown-item navbarUser-item" href="#"
+                      >Something else here</a
+                    >
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item navbarUser-item" href="#">登出</a>
+                  </div>
+                </li>
+
+                <!-- 使用者圖示 -->
+                <li class="nav-item userIcon">
+                  <img src="https://fakeimg.pl/32x32/" alt="userIcon" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <section>
+          <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="line"></div>
+
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal",
+        });
+
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar, #content").toggleClass("active");
+          $(".collapse.show").toggleClass("show");
+          $("a[aria-expanded=true]").attr("aria-expanded", "false");
+          // $("#sidebar:not(.active) ul").removeClass("show");
+        });
+      });
+    </script>
+  </body>
+</html>
